@@ -1,0 +1,36 @@
+# CODEOWNERS file for search-plugin-488
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-api @Armor-test/team-security @Armor-test/team-core
+
+# Directory ownership
+/modules/ @Armor-test/squad-ml @Armor-test/squad-cloud
+/middleware/ @Armor-test/dept-reliability @Armor-test/dept-release @Armor-test/team-logging
+/web/ @Armor-test/dept-release @Armor-test/team-security
+/auth/ @Armor-test/dept-ui @Armor-test/squad-performance
+/extensions/ @Armor-test/dept-ui @Armor-test/squad-database
+/deploy/ @Armor-test/team-frontend @Armor-test/grp-search
+/vendor/ @Armor-test/squad-payments @Armor-test/grp-api @Armor-test/squad-product
+/app/ @Armor-test/dept-reporting @Armor-test/team-frontend @Armor-test/grp-ui
+/helpers/ @Armor-test/unit-governance @Armor-test/dept-release @Armor-test/team-notifications
+/components/ @Armor-test/team-core @Armor-test/team-reporting @Armor-test/squad-qa
+
+# File type ownership
+*.scala @Armor-test/grp-reporting @Armor-test/team-security
+*.scss @Armor-test/squad-payments @Armor-test/dept-logging @Armor-test/dept-ui
+*.php @Armor-test/squad-search @Armor-test/unit-design @Armor-test/grp-reporting
+*.yml @Armor-test/unit-test @Armor-test/dept-logging
+*.html @Armor-test/squad-qa @Armor-test/team-reporting @Armor-test/grp-payments
+*.toml @Armor-test/squad-mobile @Armor-test/grp-payments @Armor-test/squad-reporting
+*.kt @Armor-test/grp-api @Armor-test/squad-database
+*.c @Armor-test/squad-qa @Armor-test/squad-ml
+*.jsx @Armor-test/squad-performance @Armor-test/dept-billing
+*.properties @Armor-test/squad-reporting @Armor-test/dept-test
+*.tsx @Armor-test/unit-test @Armor-test/squad-reporting @Armor-test/grp-storage
+*.proto @Armor-test/dept-reliability @Armor-test/squad-search
+*.swift @Armor-test/dept-reliability @Armor-test/grp-payments @Armor-test/squad-performance
+
+# Security and special files
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
